@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>06-personInfoList</title>
+	<link rel="stylesheet" type="text/css" href="../../bootstrap-4.2.1/css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+			background-color: #E6E6E6;
+		}
+		.containerDetail-wrapping{
+			margin: 20px auto;
+			padding: 30px 0px;
+			border: 2px solid #C1C1C1;
+			border-radius: 8px;
+			box-shadow: 5px 5px 20px grey;
+			background-color: #fff;			
+		}
+	</style>
+</head>
+<body>
+	<div class="container containerDetail-wrapping">
+		<br>
+		<form action="#">
+			<div class="form-group row">
+				<label for="forUsername" class="col-sm-3 col-form-label text-center">用户名</label>
+				<div class="col-sm-6">
+					<input type="text" class="form-control" id="forUsername" value="zhangsan" readonly>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="forPassword" class="col-sm-3 col-form-label text-center">密码</label>
+				<div class="col-sm-6">
+					<input type="password" class="form-control" id="forPassword" value="123456" readonly>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="forCellphone" class="col-sm-3 col-form-label text-center">联系电话</label>
+				<div class="col-sm-6">
+					<input type="text" class="form-control" id="forCellphone" value="15976527539" readonly>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="forEmail" class="col-sm-3 col-form-label text-center">邮箱</label>
+				<div class="col-sm-6">
+					<input type="text" class="form-control" id="forEmail" value="15976257539@163.com" readonly>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-3"></label>
+				<div class="col-sm-9">
+					<div class="custom-control custom-radio custom-control-inline">
+					  <input type="radio" id="forMan" name="forCheckFlag" class="custom-control-input" checked>
+					  <label class="custom-control-label" for="forMan">男</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+					  <input type="radio" id="forWoman" name="forCheckFlag" class="custom-control-input" >
+					  <label class="custom-control-label" for="forWoman">女</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="" class="col-sm-3 col-form-label text-center">个人简介</label>
+				<div class="col-sm-6">
+					<textarea type="text" id="forRefuseResion" name="" class="form-control" rows="4" readonly>我是一个大好人，好过头了。</textarea>
+				</div>
+			</div>
+			<br>
+			<div class="form-group row">
+				<label class="col-sm-3"></label>
+				<div class="col-sm-6 text-center">
+					<button type="button" class="btn col-sm-3 btn-outline-primary mr-lg-5">编辑</button>
+					<button type="button" class="btn col-sm-3 btn-outline-primary">保存</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../../bootstrap-4.2.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+/*
+这是 welcome.html 的样式
+*/
+body{
+    background-color: #E6E6E6;
+}
+.infomation,.container-wrapping{
+    margin: 20px auto;
+    padding: 20px 20px 50px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.goToOperationBtn{
+  position:absolute;
+  right:50px;
+  line-height: 20px;
+}

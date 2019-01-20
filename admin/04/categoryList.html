@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>04-categoryList</title>
+	<link rel="stylesheet" type="text/css" href="../../bootstrap-4.2.1/css/bootstrap.min.css">
+		<style type="text/css">
+		.container-wrapping{
+			margin: 20px auto;
+			padding-top: 20px;	
+		}
+		.topDiv,.searchHeader{
+			padding: 0px 25px;
+		}
+		.deleteRecordA{
+			color: #f00;
+		}
+		.deleteRecordA:hover{
+			color: #d00;
+		}
+	</style>
+</head>
+<body>
+	<div class="container container-wrapping">
+		<h3>物品分类记录：</h3>
+		<hr><br>
+		<!-- 搜索头，添加头 -->
+		<div class="topDiv row">
+			<button type="button" class="btn btn-primary mr-lg-5 my-1" data-toggle="modal" data-target="#addCategoryModal">添加分类</button>
+		</div><!-- topDiv row -->
+		<br>
+		<div class="table-responsive">
+			<table class="table text-center table-hover">
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">类名</th>
+						<th scope="col">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td>卡片</td>
+						<td><a href="javascript:;" class="alert-link deleteRecordA">删除</a></td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>钥匙</td>
+						<td><a href="javascript:;" class="alert-link deleteRecordA">删除</a></td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>书籍</td>
+						<td><a href="javascript:;" class="alert-link deleteRecordA">删除</a></td>
+					</tr>
+					<tr>
+						<th scope="row">4</th>
+						<td>书包</td>
+						<td><a href="javascript:;" class="alert-link deleteRecordA">删除</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<br><br>
+	</div>
+
+<!-- Modal : addCategoryModal -->
+<div class="modal fade" id="addCategoryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">添加分类</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="" method="">
+        	<div class="form-group row">
+        		<label for="forUsername" class="col-sm-2 col-form-label text-center">类名</label>
+        		<div class="col-sm-9">
+        			<input type="text" class="form-control" id="forUsername" placeholder="">
+        		</div>
+        	</div>
+        </form>
+      </div><!-- modal-body -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary">添加</button>
+      </div><!-- modal-footer -->
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modal fade -->
+
+
+
+	<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../../bootstrap-4.2.1/js/bootstrap.min.js"></script>
+</body>
+</html>

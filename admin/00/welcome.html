@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home-Welcome</title>
+    <link rel="stylesheet" type="text/css" href="../../bootstrap-4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/welcome.css">
+</head>
+<body>
+  <div class="infomation container container-wrapping">
+    <h3>最新用户申请</h3>
+    <hr>
+    <div class="alert alert-info" role="alert">
+      有 <span class="badge badge-info">
+        <strong>20</strong></span> 条 新的 
+        <a href="#" class="badge badge-info"><strong>寻找失物</strong></a> 信息需要处理。
+        <a class="btn btn-info btn-sm goToOperationBtn" href="../01/checkList.html" role="button">去处理</a>
+    </div>
+    <br><br>
+    <h3>系统信息</h3>
+    <hr>
+    <div class="table-responsive">
+        <!-- 这里又是一个table，显示系统发布的信息，根据时间排序，只显示前面10条信息 -->
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">标题</th>
+              <th scope="col">发布者</th>
+              <th scope="col">发布时间</th>
+              <th scope="col">详情</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>今日话题</td>
+              <td>Mark</td>
+              <td>2018-12-31</td>
+              <td><a href="#" class="alert-link" data-toggle="modal" data-target="#showSystemInfoDetail">详情</a></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>今日话题</td>
+              <td>Mark</td>
+              <td>2018-12-31</td>
+              <td><a href="#" class="alert-link" data-toggle="modal" data-target="#showSystemInfoDetail">详情</a></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>今日话题</td>
+              <td>Mark</td>
+              <td>2018-12-31</td>
+              <td><a href="#" class="alert-link" data-toggle="modal" data-target="#showSystemInfoDetail">详情</a></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+  <!-- Modal : showSystemInfoDetail -->
+  <div class="modal fade" id="showSystemInfoDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">系统信息</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="" method="">
+            <div class="form-group row">
+              <label for="forUsername" class="col-sm-3 col-form-label text-center">标题</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="forUsername" placeholder="" readonly>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="" class="col-sm-3 col-form-label text-center">内容</label>
+              <div class="col-sm-9">
+                <textarea type="text" id="forRefuseResion" name="" class="form-control" readonly rows="6"></textarea>
+              </div>
+            </div>
+          </form>
+        </div><!-- modal-body -->
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal fade -->
+
+  <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../../bootstrap-4.2.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+	<title>01-recordList</title>
+	<link rel="stylesheet" type="text/css" href="../../bootstrap-4.2.1/css/bootstrap.min.css">
+	<style type="text/css">
+		.container-wrapping{
+			margin: 20px auto;
+			padding-top: 20px;			
+		}
+		.searchHeader{
+			padding: 0px 25px;
+		}
+		.deleteRecordA{
+			color: #f00;
+		}
+		.deleteRecordA:hover{
+			color: #d00;
+		}
+	</style>
+</head>
+<body>
+	<div class="container container-wrapping">
+		<h3>寻找失物记录：</h3>
+		<hr><br>
+		<!-- 搜索头 -->
+		<div class="searchHeader">
+			<form class="form-inline">
+				<label class="my-1 mr-2" for="forCategory">物品类别</label>
+			  <select class="custom-select my-1 mr-lg-5" id="forCategory">
+			    <option selected>请选择...</option>
+			    <option value="1">卡片</option>
+			    <option value="2">钥匙</option>
+			    <option value="3">电子设备</option>
+			  </select>
+
+				<label class="my-1 mr-2" for="forTime">时间</label>
+			  <select class="custom-select my-1 mr-lg-5" id="forTime">
+			    <option selected>请选择...</option>
+			    <option value="1">近一周</option>
+			    <option value="2">近一个月</option>
+			    <option value="3">本学期</option>
+			  </select>
+
+			  <div class="form-group my-1 mr-sm-1">
+			    <label for="forSearchContent"class="sr-only">请输入搜索内容...</label>
+			    <input type="text" class="form-control" id="forSearchContent" placeholder="请输入搜索内容...">
+			  </div>
+			  <button type="button" class="btn btn-primary my-1">搜索</button>
+			</form>
+		</div>
+		<br>
+		<!-- 展示记录 -->
+		<div class="recordListTable table-responsive">
+			<table class="table table-hover text-center">
+				<thead>
+			    <tr class="">
+			      <th scope="col">#</th>
+			      <th scope="col">申请人</th>
+			      <th scope="col">标题</th>
+			      <th scope="col">细节</th>
+			      <th scope="col">种类</th>
+			      <th scope="col">申请时间</th>
+			      <th scope="col">详情</th>
+			      <th scope="col">操作</th>
+			    </tr>					
+				</thead>
+				<tbody>
+			    <tr>
+			      <th scope="row">1</th>
+			      <td>Mark</td>
+			      <td>钥匙</td>
+			      <td>在三教学楼，图书馆，123</td>
+			      <td>钥匙</td>
+			      <td>2019-01-12</td>
+			      <td><a href="recordListDetail.html" class="alert-link">详情</a></td>
+			      <td><a href="#" class="alert-link deleteRecordA">删除</a></td>
+			    </tr>				    
+			    <tr>
+			      <th scope="row">1</th>
+			      <td>Mark</td>
+			      <td>钥匙</td>
+			      <td>在三教学楼，图书馆，123</td>
+			      <td>钥匙</td>
+			      <td>2019-01-12</td>
+			      <td><a href="recordListDetail.html" class="alert-link">详情</a></td>
+			      <td><a href="#" class="alert-link deleteRecordA">删除</a></td>
+			    </tr>
+					<tr>
+			      <th scope="row">1</th>
+			      <td>Mark</td>
+			      <td>钥匙</td>
+			      <td>在三教学楼，图书馆，123</td>
+			      <td>钥匙</td>
+			      <td>2019-01-12</td>
+			      <td><a href="recordListDetail.html" class="alert-link">详情</a></td>
+			      <td><a href="#" class="alert-link deleteRecordA">删除</a></td>
+			    </tr>				
+				</tbody>
+			</table>
+			<br>
+			<!-- 分页显示 -->
+			<nav aria-label="Page navigation example">
+			  <ul class="pagination justify-content-end">
+			    <li class="page-item">
+			     	<a class="page-link" href="#" aria-label="Previous">
+			        <span aria-hidden="true">&laquo;</span>
+			      </a>
+			    </li>
+			    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+			    <li class="page-item"><a class="page-link" href="#">2</a></li>
+			    <li class="page-item"><a class="page-link" href="#">3</a></li>
+			    <li class="page-item">
+			      <a class="page-link" href="#" aria-label="Next">
+			        <span aria-hidden="true">&raquo;</span>
+			      </a>
+			    </li>
+			  </ul>
+			</nav>
+		</div>
+	</div><!-- container recordList -->
+	<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../../bootstrap-4.2.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>01-checkInfoDetail</title>
+	<link rel="stylesheet" type="text/css" href="../../bootstrap-4.2.1/css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+			background-color: #E6E6E6;
+		}
+		.containerDetail-wrapping{
+			margin: 20px auto;
+			padding: 30px 0px;
+			border: 2px solid #C1C1C1;
+			border-radius: 8px;
+			box-shadow: 5px 5px 20px grey;
+			background-color: #fff;
+		}
+		.turnBack{
+			padding: 0px 33px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container containerDetail-wrapping">
+		<!-- 取消 X 键 -->
+		<div class="turnBack text-right">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="history.go(-1)">
+        <span aria-hidden="true">&times;</span>
+      </button>
+		</div>
+		<br>
+		<form action="">
+			<div class="form-group row">
+				<label class="col-sm-1"></label>
+				<label for="forPhoto" class="col-sm-2 col-form-label text-center">照片</label>
+				<div class="col-sm-6">
+					<figure class="figure">
+					  <img src="../../images/2.jpg" class="figure-img img-fluid rounded mx-auto d-block">
+					  <!-- 若用户没有上传照片，则显示下面这句话；若有照片，则不显示。 也可以没有照片，把这个行的div隐藏 -->
+					  <!-- <figcaption class="figure-caption">用户没有上传照片</figcaption> -->
+					</figure>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-1"></label>
+				<label for="forApplicant" class="col-sm-2 col-form-label  text-center">申请人 </label>
+				<div class="col-sm-6">
+					<input type="text" id="forApplicant" name="" class="form-control" readonly value="张三">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-1"></label>
+				<label for="forTitle" class="col-sm-2 col-form-label text-center">标题 </label>
+				<div class="col-sm-6">
+					<input type="text" id="forTitle" name="" class="form-control" readonly>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-1"></label>
+				<label for="forDetail" class="col-sm-2 col-form-label text-center">细节 </label>
+				<div class="col-sm-6">
+					<textarea type="text" id="forDetail" name="" class="form-control" readonly></textarea>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-1"></label>
+				<label for="forPhone" class="col-sm-2 col-form-label text-center">联系电话</label>
+				<div class="col-sm-6">
+					<input type="text" id="forPhone" name="" class="form-control" readonly value="123123123">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-1"></label>
+				<label for="forCategory" class="col-sm-2 col-form-label text-center">失物类别 </label>
+				<div class="col-sm-6">
+					<select class="custom-select" id="forCategory">
+						<option selected>选择类别</option>
+				    <option value="1">卡片</option>
+				    <option value="2">箱包</option>
+				    <option value="3">电子设备</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-sm-3"></label>
+				<div class="col-sm-6">
+					<div class="custom-control custom-radio custom-control-inline">
+					  <input type="radio" id="allowPublish" name="forCheckFlag" class="custom-control-input">
+					  <label class="custom-control-label" for="allowPublish">允许发布</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+					  <input type="radio" id="refugePublish" name="forCheckFlag" class="custom-control-input" >
+					  <label class="custom-control-label" for="refugePublish">拒绝发布</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group row resionForRefuge" style="display: none;">
+				<label class="col-sm-1"></label>
+				<label for="forRefuseResion" class="col-sm-2 col-form-label text-center">拒绝理由</label>
+				<div class="col-sm-6">
+					<textarea type="text" id="forRefuseResion" name="" class="form-control"></textarea>
+				</div>
+			</div>
+			<br>
+			<div class="form-group row">
+				<label class="col-sm-3"></label>
+				<div class="col-sm-6 text-center">
+					<button type="button" class="btn col-sm-3 btn-outline-primary mr-lg-5" onclick="history.go(-1)">取消</button>
+					<button type="button" class="btn col-sm-3 btn-outline-primary">确定</button>
+				</div>
+			</div>
+		</form>
+	</div> <!-- container operateApplication -->
+	<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../../bootstrap-4.2.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// 点击是否 允许发布、拒绝发布，显示拒绝理由输入框
+			$("#allowPublish").on("click",function(){
+				$(".resionForRefuge").hide(800);
+			});
+			$("#refugePublish").on("click",function(){
+				$(".resionForRefuge").show(800);
+			})
+		});
+	</script>
+</body>
+</html>

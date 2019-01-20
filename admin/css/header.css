@@ -1,0 +1,42 @@
+/* 
+这是 header.html 的样式
+*/
+
+/* 设置铺满整个屏幕 */
+/*html,body{
+	height: 100%;
+}*/
+
+/* header.html的标签 */
+.header{
+	height: 80px;
+	width: 100%;
+	background-color: #409EFF;
+	color: #FFFFFF;
+	line-height: 80px;
+	position: fixed;
+}
+
+/* header部分的左边的样式 */
+.systemTitle{
+	padding-left: 3px;
+  font-size: 25px;
+  font-family: "华文楷体";
+  letter-spacing: 8px;
+}
+/* header部分的右边的样式*/
+ul,li,a{
+	color: white;
+	margin-left: 10px;
+}
+li{
+  list-style-type: none;
+  display: inline-block;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: white;
+	text-decoration: none;
+}

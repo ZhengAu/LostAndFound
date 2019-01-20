@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>01-checkInfo</title>
+	<link rel="stylesheet" type="text/css" href="../../bootstrap-4.2.1/css/bootstrap.min.css">
+	<style type="text/css">
+		.container-wrapping{
+			margin: 20px auto;
+			padding-top: 20px;
+		}
+		/*checkList.html*/
+		.successHandle{
+			color: #00dd00;
+		}
+		.doNotHandle{
+			color: #ff0000;
+		}
+	</style>
+</head>
+<body>
+	<div class="container container-wrapping">
+		<h3>最新申请：</h3>
+		<hr><br>
+		<div class="table-responsive">
+			<table class="table table-hover text-center">
+			  <thead>
+			    <tr class="">
+			      <th scope="col">#</th>
+			      <th scope="col">申请者</th>
+			      <th scope="col">标题</th>
+			      <th scope="col">细节</th>
+			      <th scope="col">种类</th>
+			      <th scope="col">申请时间</th>
+			      <th scope="col">处理状态</th>
+			      <th scope="col">操作</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th scope="row">1</th>
+			      <td>Mark</td>
+			      <td>钥匙</td>
+			      <td>在三教学楼，图书馆，123</td>
+			      <td>钥匙</td>
+			      <td>2019-01-12</td>
+			      <td>
+			      	<span class="successHandle">已发布</span>
+						</td>
+			      <td><a href="checkListDetail.html" class="alert-link">处理</a></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">2</th>
+			      <td>Jacob</td>
+			      <td>Thornton</td>
+			      <td>@fat</td>
+			      <td>@fat</td>
+			      <td>2019-01-12</td>
+			      <td>
+			      	<span class="doNotHandle">未发布</span>
+						</td>
+			      <td><a href="checkListDetail.html" class="alert-link">处理</a></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">3</th>
+			      <td>Larry</td>
+			      <td>the Bird</td>
+			      <td>@twitter</td>
+			      <td>@twitter</td>
+			      <td>2019-01-12</td>
+			      <td>
+			      	<span class="doNotHandle">未发布</span>
+						</td>
+			      <td><a href="checkListDetail.html" class="alert-link">处理</a></td>
+			    </tr>
+			  </tbody>
+			</table>
+		</div>	
+		<br>
+		<!-- 分页显示 -->
+		<nav aria-label="Page navigation example">
+		  <ul class="pagination justify-content-end">
+		    <li class="page-item">
+		     	<a class="page-link" href="#" aria-label="Previous">
+		        <span aria-hidden="true">&laquo;</span>
+		      </a>
+		    </li>
+		    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+		    <li class="page-item"><a class="page-link" href="#">2</a></li>
+		    <li class="page-item"><a class="page-link" href="#">3</a></li>
+		    <li class="page-item">
+		      <a class="page-link" href="#" aria-label="Next">
+		        <span aria-hidden="true">&raquo;</span>
+		      </a>
+		    </li>
+		  </ul>
+		</nav>
+	</div><!-- container container-wrapping -->
+	<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../../bootstrap-4.2.1/js/bootstrap.min.js"></script>
+</body>
+</html>

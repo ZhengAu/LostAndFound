@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>06-systemInfoList</title>
+	<link rel="stylesheet" type="text/css" href="../../bootstrap-4.2.1/css/bootstrap.min.css">
+	<style type="text/css">
+		.container-wrapping{
+			margin: 20px auto;
+			padding-top: 20px;
+		}
+		.topDiv,.searchHeader{
+			padding: 0px 25px;
+		}
+		.deleteRecordA{
+			color: #f00;
+		}
+		.deleteRecordA:hover{
+			color: #d00;
+		}
+	</style>
+</head>
+<body>
+	<div class="container container-wrapping">
+		<h3>系统信息记录：</h3>
+		<hr><br>
+		<div class="topDiv row">
+			<button type="button" class="btn btn-primary mr-lg-5 my-1" data-toggle="modal" data-target="#issueNewInfoModal">发布信息</button>
+		</div><!-- topDiv row -->
+		<br>
+		<!-- User记录 -->
+		<div class="userListTable table-responsive">
+			<table class="table table-hover text-center">
+				<thead>
+			    <tr class="">
+			      <th scope="col">#</th>
+			      <th scope="col">标题</th>
+			      <th scope="col">发布时间</th>
+			      <th scope="col">详情</th>
+			      <th scope="col">操作</th>
+			    </tr>					
+				</thead>
+				<tbody>
+			    <tr>
+			      <th scope="row">1</th>
+			      <td>First news</td>
+			      <td>2019-01-12</td>
+			      <td><a href="systemInfoListDetail.html" class="alert-link">详情</a></td>
+			      <td><a href="#" class="alert-link deleteRecordA">删除</a></td>
+			    </tr>				    
+			    <tr>
+			      <th scope="row">2</th>
+			      <td>second news</td>
+			      <td>2019-01-12</td>
+			      <td><a href="systemInfoListDetail.html" class="alert-link">详情</a></td>
+			      <td><a href="#" class="alert-link deleteRecordA">删除</a></td>
+			    </tr>	
+			    <tr>
+			      <th scope="row">3</th>
+			      <td>third news</td>
+			      <td>2019-01-12</td>
+			      <td><a href="systemInfoListDetail.html" class="alert-link">详情</a></td>
+			      <td><a href="#" class="alert-link deleteRecordA">删除</a></td>
+			    </tr>				
+				</tbody>
+			</table>
+			<br>
+			<!-- 分页显示 -->
+			<nav aria-label="Page navigation example">
+			  <ul class="pagination justify-content-end">
+			    <li class="page-item">
+			     	<a class="page-link" href="#" aria-label="Previous">
+			        <span aria-hidden="true">&laquo;</span>
+			      </a>
+			    </li>
+			    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+			    <li class="page-item"><a class="page-link" href="#">2</a></li>
+			    <li class="page-item"><a class="page-link" href="#">3</a></li>
+			    <li class="page-item">
+			      <a class="page-link" href="#" aria-label="Next">
+			        <span aria-hidden="true">&raquo;</span>
+			      </a>
+			    </li>
+			  </ul>
+			</nav>
+		</div>
+	</div><!-- container -->
+
+	<!-- Modal : issueNewInfoModal -->
+	<div class="modal fade" id="issueNewInfoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">发布系统信息</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form action="" method="">
+	        	<div class="form-group row">
+	        		<label for="forUsername" class="col-sm-3 col-form-label text-center">标题</label>
+	        		<div class="col-sm-9">
+	        			<input type="text" class="form-control" id="forUsername" placeholder="">
+	        		</div>
+	        	</div>
+						<div class="form-group row">
+							<label for="" class="col-sm-3 col-form-label text-center">内容</label>
+							<div class="col-sm-9">
+								<textarea type="text" id="forRefuseResion" name="" class="form-control" rows="5"></textarea>
+							</div>
+						</div>
+	        </form>
+	      </div><!-- modal-body -->
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+	        <button type="button" class="btn btn-primary">发布</button>
+	      </div><!-- modal-footer -->
+	    </div><!-- modal-content -->
+	  </div><!-- modal-dialog -->
+	</div><!-- modal fade -->
+
+	<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../../bootstrap-4.2.1/js/bootstrap.min.js"></script>
+</body>
+</html>
