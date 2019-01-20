@@ -1,10 +1,10 @@
 
 ## 创建简易的本地服务器
 
-+ 安装`node.js`
-+ 在项目下，通过`npm init -y`创建`package.json`文件
-+ 通过`npm install mime --save`加载mime插件
-+ 创建`server.js`，内容如下
+1. 安装`node.js`
+2. 在项目下，通过`npm init -y`创建`package.json`文件
+3. 通过`npm install mime --save`加载mime插件
+4. 创建`server.js`，内容如下
     ```
     var http=require("http");
     var path=require("path");
