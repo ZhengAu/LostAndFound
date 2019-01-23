@@ -5,22 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>02-recordListDetail</title>
 	<link rel="stylesheet" type="text/css" href="../../bootstrap-4.2.1/css/bootstrap.min.css">
-	<style type="text/css">
-		body{
-			background-color: #E6E6E6;
-		}
-		.containerDetail-wrapping{
-			margin: 20px auto;
-			padding: 30px 0px;
-			border: 2px solid #C1C1C1;
-			border-radius: 8px;
-			box-shadow: 5px 5px 20px grey;
-			background-color: #fff;			
-		}
-		.turnBack{
-			padding: 0px 33px;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="../css/containerDetailWrapping.css">
 </head>
 <body>
 	<div class="container containerDetail-wrapping">
@@ -33,7 +18,7 @@
 		<form action="#">
 			<div class="form-group row">
 				<label class="col-sm-1"></label>
-				<label for="forPhoto" class="col-sm-2 col-form-label">&nbsp;&nbsp;&nbsp;&nbsp;照片 </label>
+				<label for="forPhoto" class="col-sm-2 col-form-label text-center">照片</label>
 				<div class="col-sm-6">
 					<figure class="figure">
 					  <img src="../../images/2.jpg" class="figure-img img-fluid rounded mx-auto d-block">
@@ -42,21 +27,21 @@
 			</div>
 			<div class="form-group row">
 				<label class="col-sm-1"></label>
-				<label for="forTitle" class="col-sm-2 col-form-label">&nbsp;&nbsp;&nbsp;&nbsp;标题 </label>
+				<label for="forTitle" class="col-sm-2 col-form-label text-center">标题</label>
 				<div class="col-sm-6">
 					<input type="text" id="forTitle" name="" class="form-control" value="钥匙" readonly>
 				</div>
 			</div>
 			<div class="form-group row">
 				<label class="col-sm-1"></label>
-				<label for="forPhone" class="col-sm-2 col-form-label">失物类别</label>
+				<label for="forPhone" class="col-sm-2 col-form-label text-center">失物类别</label>
 				<div class="col-sm-6">
 					<input type="text" id="forPhone" name="" class="form-control" readonly value="钥匙">
 				</div>
 			</div>
 			<div class="form-group row">
 				<label class="col-sm-1"></label>
-				<label for="forDetail" class="col-sm-2 col-form-label">&nbsp;&nbsp;&nbsp;&nbsp;细节 </label>
+				<label for="forDetail" class="col-sm-2 col-form-label text-center">细节</label>
 				<div class="col-sm-6">
 					<textarea type="text" id="forDetail" name="" class="form-control" readonly>这里是细节，细节描述</textarea>
 				</div>
@@ -76,7 +61,7 @@
 			</div>
 			<div class="form-group row">
 				<label class="col-sm-1"></label>
-				<label for="forRefuseResion" class="col-sm-2 col-form-label">认领情况</label>
+				<label for="forRefuseResion" class="col-sm-2 col-form-label text-center">认领情况</label>
 				<div class="col-sm-6">
 					<textarea type="text" id="forRefuseResion" name="" class="form-control"></textarea>
 				</div>

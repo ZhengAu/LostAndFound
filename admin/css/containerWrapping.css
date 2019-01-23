@@ -2,3 +2,34 @@
 公共样式：记录列表展示的
 这里是 container-wrapping 的样式
 */
+/*common style*/
+.container-wrapping{
+	margin: 20px auto;
+	padding-top: 20px;
+}
+.successHandle{
+	color: #00dd00;
+}
+.doNotHandle{
+	color: #ff0000;
+}
+.topDiv,.searchHeader{
+	padding: 0px 25px;
+}
+.deleteRecordA{
+	color: #f00;
+}
+.deleteRecordA:hover{
+	color: #d00;
+}
+
+/* admin\01\checkList.html */
+/* admin\01\recordList.html */
+/* admin\02\recordList.html */
+/* admin\03\failureRecordList.html */
+/* admin\03\successRecordList.html */
+/* admin\04\categoryList.html */
+/* admin\04\invalidArticleList.html */
+/* admin\05\rootList.html */
+/* admin\05\userList.html */
+/* admin\06\systemInfoList.html */

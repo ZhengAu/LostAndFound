@@ -2,3 +2,44 @@
 公共样式：细节展示的，提交表单的
 这里是 containerDetail-wrapping 的样式
 */
+
+
+
+
+/* common style */
+body{
+	background-color: #E6E6E6;
+}
+.containerDetail-wrapping{
+	margin: 20px auto;
+	padding: 30px 0px;
+	border: 2px solid #C1C1C1;
+	border-radius: 8px;
+	box-shadow: 5px 5px 20px grey;
+	background-color: #fff;
+}
+.turnBack{
+	padding: 0px 33px;
+}
+
+
+/* admin\02\publishSearchInfo.html */
+.showPhotoImg{
+	border: 1px solid #C1C1C1;
+	box-shadow: 1px 1px 3px #EBEDEF;
+}
+.closeImgBtn{
+	position: absolute;
+	right: 16px;
+}
+
+/* admin\01\checkListDetail.html */
+/* admin\01\recordListDetail.html */
+/* admin\02\publishSearchInfo.html */
+/* admin\02\recordListDetail.html */
+/* admin\03\failureRecordDetail.html */
+/* admin\03\successRecordDetail.html */
+/* admin\06\personalInfoList.html */
+/* admin\06\systemInfoListDetail.html */
+
+

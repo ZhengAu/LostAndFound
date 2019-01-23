@@ -36,7 +36,12 @@ li{
 a{
 	text-decoration: none;
 }
-a:hover{
-	color: white;
+.header a:hover{
+  color: #fff;
+  font-weight: bold;
 	text-decoration: none;
+}
+/*层级选择器，.header内部的所有.rightDiv*/
+.header .rightDiv{
+  padding-right: 50px;
 }
