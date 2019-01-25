@@ -69,7 +69,7 @@ CREATE TABLE `foundarticle` (
 -- ----------------------------
 DROP TABLE IF EXISTS `info`;
 CREATE TABLE `info` (
-  `infoid` int(11) NOT NULL,
+  `infoid` int(20) NOT NULL,
   `infomation` varchar(255) NOT NULL,
   `datetime` varchar(255) DEFAULT NULL,
   `rid` int(20) DEFAULT NULL,
