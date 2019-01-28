@@ -44,7 +44,7 @@
 }
 .error{
      color: red;
-     display: none;
+     /*display: none;*/
 }
 .forgetPwd{
     color: #CDC5BF
