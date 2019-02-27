@@ -8,7 +8,7 @@
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>首页</title>
+  <title>信息中心</title>
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" type="text/css" href="../../bootstrap-4.2.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
@@ -49,6 +49,7 @@
           <a href="#" class="tab-link button takeInfoBtn active">领取信息</a>
           <a href="#" class="tab-link button systemInfoBtn">系统信息</a>
         </div>
+        <!-- 领取信息 -->
         <div class="takeInfoDiv">
           <div class="card demo-card-header-pic">
             <div class="card-header color-white no-border no-padding">
@@ -98,7 +99,8 @@
               </div>
             </div>
           </div>
-        </div>
+        </div><!-- end of .takeInfoDiv -->
+        <!-- 系统信息 -->
         <div class="systemInfoDiv" style="display: none;">
           <div class="card">
             <div class="card-header">
@@ -191,10 +193,10 @@
               </div>
             </div>
           </div>
-        </div>
+        </div><!-- end of .systemInfoDiv -->
         <div class="article-end text-center" style="padding: 10px;display: none;">已经到底啦～</div>
-      </div>
-    </div>
+      </div><!-- end of .content-wrapping -->
+    </div><!-- end of .mainContent -->
 		<!-- 底部，导航栏 -->
 		<footer class="footer">
 		  <nav class="bar bar-tab">
@@ -216,7 +218,7 @@
 		    </a>
 		  </nav>
 		</footer>
-	</div> <!-- end of container -->
+	</div> <!-- end of .container -->
 
   <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
   <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
@@ -225,7 +227,6 @@
   <script type="text/javascript">
     // 获取滚动的元素
     var scrollArticle = document.getElementById("mainContent")
-
     // 回到顶部函数
     function myScrollToTopFn() {
       // 获取滚动后的scrollTop值
@@ -249,7 +250,6 @@
         $('.article-end').css('display','none')
       }
     } // end of myScrollToTopFn()
-
     $(function(){
       // 点击卡片（领取信息），显示内容
       $('.takeInfoBtn').on('click', function(){

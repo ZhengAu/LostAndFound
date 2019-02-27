@@ -41,7 +41,6 @@
 		</header>
 		<!-- 中间，记录显示 -->
 		<article class="article" id="article" onscroll="myScrollToTopFn()">
-      
       <!-- 寻找失物 -->
       <div id="searchLose" class="searchLose">
         <section class="items">
@@ -229,7 +228,7 @@
           </div>
         </section>
         <div class="article-end text-center" style="padding: 10px;display:none;">已经到底啦～</div>
-      </div>
+      </div><!-- end of .searchLose -->
       
       <!-- 寻找失主 -->
       <div id="searchLoser" class="searchLoser">
@@ -257,7 +256,7 @@
           </div>
         </section>     
         <div class="article-end text-center" style="padding: 10px;display:none;">已经到底啦～</div>
-      </div>
+      </div><!-- end of .searchLoser -->
     
     </article>
 		<!-- 底部，导航栏 -->
@@ -281,14 +280,12 @@
         </a>
       </nav>
 		</footer>
-	</div> <!-- end of container -->
+	</div> <!-- end of .container -->
 
   <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
-  <!-- <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script> -->
   <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
 	<script type="text/javascript" src="../../js/jquery-3.3.1.min.js" charset="utf-8"></script>
 	<script type="text/javascript" src="../../bootstrap-4.2.1/js/bootstrap.min.js"></script>
-  <script src="../js/scrollToTop-master/jquery.scrollToTop.min.js"></script>
   <script type="text/javascript">
     // 获取滚动的元素
     var scrollArticle = document.getElementById("article")
