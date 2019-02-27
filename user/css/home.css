@@ -1,0 +1,104 @@
+/*
+这是首页的样式
+*/
+html,body{
+	height: 100%;
+	background-color: #ccc;
+}
+.container{
+	height: 100%;
+	padding: 0px; 
+	width: 571px;
+	display: flex;
+	flex-direction: column;
+  background-color: #fff;
+}
+.header{
+	height: 110px;
+	width: 100%;
+	background: #EAECEB;
+}
+.header-title{
+	height: 41%;
+	background: #DEE1E6;
+}
+.header-search{
+	height: 59%;
+  padding: 10px;
+}
+.footer{
+	background: #ccc;
+	height: 64px;
+	flex: 0 0 auto;
+}
+.article{
+	height: 100%;
+  padding: 3px;
+  border: 0px solid #0f0;
+  /*设置滚动条*/
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /*解决ios上滑动不流畅*/
+  -webkit-overflow-scrolling: touch;
+  /*纵向超出部分将会隐藏，即滚动条部分被挤出可视区域*/
+}
+  /*设置滚动条，谷歌内核webkit*/
+.container ::-webkit-scrollbar {
+    display: none;
+}
+/*设置滚动条，IE或者Firefox*/
+.container {
+    -ms-overflow-style: none; /*IE 10+*/
+    overflow: -moz-scrollbars-none; /*Firefox*/
+}
+a:link{
+  text-decoration: none;
+}
+.bar{
+  width: 571px;
+  margin: auto;
+}
+
+
+/* ================== */
+.searchbar{
+	border: 0px solid #0f0;
+	padding-left: 60px;
+}
+.searchLoser{
+	display: none;
+}
+.items{
+	padding: 5px;
+	border-bottom: 2px solid #ccc;
+}
+.itemDiv{
+	padding: 0px 2px 0px 22px;
+}
+.item-img{
+	width: 122px;
+	height: 120px;
+}
+.item-img img{
+	height: 100%;width: 100%;
+}
+.item-info-top{
+	color: #000;
+	line-height: 40px;
+}
+.item-info-top-category{
+	float:right;
+	font-size: 18px;
+	font-weight: 600;
+	color: #00B0AB;
+}
+.item-info-detail{
+	padding: 5px 0px;
+	color: #777;
+	font-size: 19px;
+}
+.item-info-bottom{
+	color: #999999;
+	font-size: 18px;
+	padding: 4px 2px;
+}

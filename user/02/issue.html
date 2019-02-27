@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>首页</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../../bootstrap-4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+  <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <style type="text/css">
+    .label{
+      width: 130px;
+    }    
+    .list-block{
+      padding: 5px 0px;
+    }
+    ul{
+      padding: 2px 0px;
+    }
+    ul li{
+      padding-top: 10px;
+    }
+    ul::before,ul::after{
+      border: 1px solid #fff;
+    }
+    .issueBtn:hover{
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+	<div class="container">
+    <header class="bar bar-nav header sticky-top">
+      <!-- <a class="button button-link button-nav pull-left back" href="../01/index.html">
+        <span class="icon icon-left"></span>
+        返回
+      </a> -->
+      <a class="button button-round pull-right issueBtn">发布</a>
+      <h1 class='title'>发布寻找信息</h1>
+    </header>
+    <!-- 中间，记录显示 -->
+    <div class="mainContent">
+      <form class="list-block">
+        <ul>
+          <!-- Text inputs -->
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="label">标题</div>
+                <div class="item-input">
+                  <input type="text" placeholder="最好别超过20字">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="label">联系方式</div>
+                <div class="item-input">
+                  <input type="text" placeholder="">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="label">失物类别</div>
+                <div class="item-input">
+                  <select class="">
+                    <option>请选择分类...</option>
+                    <option value="">饭卡</option>
+                    <option value="">钥匙</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="label">发布类型</div>
+                <div class="item-input">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="0" checked>
+                    <label class="form-check-label" for="inlineRadio2">寻找失主</label>
+                  </div>
+                  <div class="form-check form-check-inline" style="padding: 0 10px 0 3px;">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">
+                    <label class="form-check-label" for="inlineRadio1">寻找失物</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="label">照片</div>
+                <div class="item-input">
+                  <input type="file">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="align-top">
+            <div class="item-content">
+              <div class="item-inner" style="border-bottom: 0.5px solid #E7E7E7;margin-bottom: 5px;">
+                <div class="label">细节</div>
+                <div class="item-input">
+                  <textarea></textarea>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </form>
+<!--       <div class="content-block">
+        <div class="row">
+          <div class="col-50"><a href="javascript:;" class="button button-big button-fill button-danger">取消</a></div>
+          <div class="col-50"><a href="javascript:;" class="button button-big button-fill button-success">发布</a></div>
+        </div>
+      </div> -->
+      <div class="modal toast modal-out" style="display: block;margin-top: -24px; margin-left: -48px;">发布成功</div>
+    </div>
+		<!-- 底部，导航栏 -->
+		<footer class="footer">
+		  <nav class="bar bar-tab">
+		    <a class="tab-item" href="../01/home.html">
+		      <span class="icon icon-home"></span>
+		      <span class="tab-label">首页</span>
+		    </a>
+		    <a class="tab-item active" href="../02/issue.html">
+		      <span class="icon icon-edit"></span>
+		      <span class="tab-label">发贴</span>
+		    </a>
+		    <a class="tab-item" href="../03/message.html">
+		      <span class="icon icon-message"></span>
+		      <span class="tab-label">信息</span>
+		    </a>
+		    <a class="tab-item" href="../04/me.html">
+		      <span class="icon icon-me"></span>
+		      <span class="tab-label">我</span>
+		    </a>
+		  </nav>
+		</footer>
+	</div> <!-- end of container -->
+
+	<script type="text/javascript" src="../../js/jquery-3.3.1.min.js" charset="utf-8"></script>
+
+  <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+  <!-- <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script> -->
+  <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+
+	<script type="text/javascript" src="../../bootstrap-4.2.1/js/bootstrap.min.js" charset="utf-8"></script>
+  <script>
+    $(function () {
+      $('.issueBtn').on('click',function () {
+        showToastByTime( true )          
+      })
+    })
+    // 发布成功或者发布失败，都显示提示，然后刷新本页面
+    function showToastByTime ( successFlag ) {
+      var info = null;
+      if( successFlag ){
+        info = '发布成功'
+      }else {
+        info = '发布失败'
+      }
+      clearTimeout(timer)
+      $('.toast').text(info)    
+      $('.toast').addClass('modal-in')
+      $('.toast').removeClass('modal-out')
+      var timer = window.setTimeout(function () {
+        $('.toast').addClass('modal-out')
+        $('.toast').removeClass('modal-int')
+        location.reload(); // 刷新当前页面
+      }, 2000)
+    }
+  </script>
+
+</body>
+</html>

@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "jquery-scrollToTop": "^0.4.3",
     "mime": "^2.4.0"
   },
   "devDependencies": {},

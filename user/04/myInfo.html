@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>我的信息</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../../bootstrap-4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+  <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <style type="text/css">
+    .label{
+      width: 130px;
+    }    
+    .list-block{
+      padding: 5px 0px;
+    }
+    ul{
+      padding: 2px 0px;
+    }
+    ul li{
+      padding-top: 10px;
+    }
+    ul::before,ul::after{
+      border: 1px solid #fff;
+    }
+    .issueBtn:hover{
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+	<div class="container">
+    <header class="bar bar-nav header sticky-top">
+      <a class="button button-link button-nav pull-left back" href="#" onclick="history.go(-1)">
+        <span class="icon icon-left"></span>
+        返回
+      </a>
+      <h1 class='title'>我的信息</h1>
+    </header>
+    <!-- 中间，记录显示 -->
+    <div class="mainContent">
+      <form class="list-block">
+        <ul>
+          <!-- Text inputs -->
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="label">用户名</div>
+                <div class="item-input">
+                  <input type="text" value="zpj" readonly>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="label">真实姓名</div>
+                <div class="item-input">
+                  <input type="text" value="郑培金">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="label">联系方式</div>
+                <div class="item-input">
+                  <input type="text" value="17876253347">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="label">邮箱</div>
+                <div class="item-input">
+                  <input type="email" value="17876253347@163.com">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="label">性别</div>
+                <div class="item-input">
+                  <div class="form-check form-check-inline" style="padding-left: 10px;">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="0" checked>
+                    <label class="form-check-label" for="inlineRadio2">男</label>
+                  </div>
+                  <div class="form-check form-check-inline" style="">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">
+                    <label class="form-check-label" for="inlineRadio1">女</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="align-top">
+            <div class="item-content">
+              <div class="item-inner" style="border-bottom: 0.5px solid #E7E7E7;margin-bottom: 5px;">
+                <div class="label">个人简介</div>
+                <div class="item-input">
+                  <textarea>wwwww我是谁我是谁</textarea>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </form>
+      <div class="content-block">
+        <div class="row">
+          <div class="col-50"><a href="javascript:;" class="button button-big button-fill button-danger">取消</a></div>
+          <div class="col-50"><a href="javascript:;" class="button button-big button-fill button-success">确定</a></div>
+        </div>
+      </div>
+      <div class="modal toast modal-out" style="display: block;margin-top: -24px; margin-left: -48px;">发布成功</div>
+    </div>
+	</div> <!-- end of container -->
+
+	<script type="text/javascript" src="../../js/jquery-3.3.1.min.js" charset="utf-8"></script>
+
+  <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+  <!-- <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script> -->
+  <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+
+	<script type="text/javascript" src="../../bootstrap-4.2.1/js/bootstrap.min.js" charset="utf-8"></script>
+  <script>
+    $(function () {
+      
+    })
+  </script>
+
+</body>
+</html>

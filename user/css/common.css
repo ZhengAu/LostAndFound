@@ -1,0 +1,39 @@
+/*
+这里是公共的属性
+*/
+html,body{
+	height: 100%;
+	background-color: #ccc;
+}
+.container{
+	height: 100%;
+	padding: 0px; 
+	width: 571px;
+	display: flex;
+	flex-direction: column;
+  background-color: #fff;
+}
+.header{
+  height: 60px;
+  width: 100%;
+  background: #F7F7F8;
+}
+.mainContent{
+  height: 100%;
+  padding: 5px;
+  margin-top: 60px;
+}
+.footer{
+  background: #ccc;
+  height: 64px;
+  flex: 0 0 auto;
+}
+a:link{
+	text-decoration: none;
+}
+.bar{
+	width: 571px;
+	margin: auto;
+}
+
+

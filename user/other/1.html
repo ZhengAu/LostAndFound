@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.scrolldiv{
+			width: 500px;
+			height: 400px;
+			margin: 10px auto;
+			background: #f00;
+			overflow-y: scroll;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+<div class="scrolldiv" id="testDiv">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+ 
+<script type="text/javascript">
+	var divscroll=document.getElementById('testDiv');
+	function divScroll(){
+		var scrollTop=divscroll.scrollTop;//页面上卷的高度
+		console.log(scrollTop)
+		var wholeHeight=divscroll.scrollHeight;//页面底部到顶部的距离
+		var divHeight=divscroll.clientHeight;//页面可视区域的高度
+		if(scrollTop+divHeight>=wholeHeight){
+			alert('我到底部了');
+		}
+		if(scrollTop==0){
+			alert('我到顶部了');
+		}
+	}
+	divscroll.onscroll=divScroll;
+</script>
+</body>
+</html>

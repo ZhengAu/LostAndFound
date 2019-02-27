@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>我的贴子</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../../bootstrap-4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+  <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <style type="text/css">
+    .mainContent{
+      height: 100%;
+      padding: 3px;
+      border: 0px solid #0f0;
+      /*设置滚动条*/
+      overflow-x: hidden;
+      overflow-y: scroll;
+      /*解决ios上滑动不流畅*/
+      -webkit-overflow-scrolling: touch;
+      /*纵向超出部分将会隐藏，即滚动条部分被挤出可视区域*/
+    }
+      /*设置滚动条，谷歌内核webkit*/
+    .container ::-webkit-scrollbar {
+        display: none;
+    }
+    /*设置滚动条，IE或者Firefox*/
+    .container {
+        -ms-overflow-style: none; /*IE 10+*/
+        overflow: -moz-scrollbars-none; /*Firefox*/
+    }
+  </style>
+</head>
+<body>
+	<div class="container">
+    <header class="bar bar-nav header">
+      <a class="button button-link button-nav pull-left back" href="#" onclick="history.go(-1)">
+        <span class="icon icon-left"></span>
+        返回
+      </a>
+      <h1 class='title'>我的贴子</h1>
+    </header>
+    <!-- 中间，记录显示 -->
+    <div class="mainContent" id="mainContent" onscroll="myScrollToTopFn()">
+      <div class="content-wrapping">
+        <div class="takeInfoDiv">
+          <a href="taken.html" style="color: #000;">
+            <div class="card demo-card-header-pic">
+              <div valign="bottom" class="card-header color-white no-border no-padding">
+                <img class='card-cover' src="../../images/search.jpg" style="width: 538px;height: 250px;">
+              </div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <strong class="">标题此处是内容此...</strong>
+                  <span class="color-gray" style="float: right;">发表于 2015/01/15</span>
+                  <p>此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="taken.html" style="color: #000;">
+            <div class="card demo-card-header-pic">
+              <div valign="bottom" class="card-header color-white no-border no-padding">
+                <img class='card-cover' src="../../images/search.jpg" style="width: 538px;height: 250px;">
+              </div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <strong class="">标题此处是内容此...</strong>
+                  <span class="color-gray" style="float: right;">发表于 2015/01/15</span>
+                  <p>此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="taken.html" style="color: #000;">
+            <div class="card demo-card-header-pic">
+              <div valign="bottom" class="card-header color-white no-border no-padding">
+                <img class='card-cover' src="../../images/search.jpg" style="width: 538px;height: 250px;">
+              </div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <strong class="">标题此处是内容此...</strong>
+                  <span class="color-gray" style="float: right;">发表于 2015/01/15</span>
+                  <p>此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="taken.html" style="color: #000;">
+            <div class="card demo-card-header-pic">
+              <div valign="bottom" class="card-header color-white no-border no-padding">
+                <img class='card-cover' src="../../images/search.jpg" style="width: 538px;height: 250px;">
+              </div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <strong class="">标题此处是内容此...</strong>
+                  <span class="color-gray" style="float: right;">发表于 2015/01/15</span>
+                  <p>此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="taken.html" style="color: #000;">
+            <div class="card demo-card-header-pic">
+              <div valign="bottom" class="card-header color-white no-border no-padding">
+                <img class='card-cover' src="../../images/2.jpg" style="width: 538px;height: 250px;">
+              </div>
+              <div class="card-content">
+                <div class="card-content-inner">
+                  <strong class="">标题此处是内容此...</strong>
+                  <span class="color-gray" style="float: right;">发表于 2015/01/15</span>
+                  <p>此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="article-end text-center" style="padding: 10px;display: none;">已经到底啦～</div>
+      </div>
+    </div>
+	</div> <!-- end of container -->
+
+  <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+  <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+	<script type="text/javascript" src="../../js/jquery-3.3.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../../bootstrap-4.2.1/js/bootstrap.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    // 获取滚动的元素
+    var scrollArticle = document.getElementById("mainContent")
+
+    // 回到顶部函数
+    function myScrollToTopFn() {
+      // 获取滚动后的scrollTop值
+      var articleScrollTop = scrollArticle.scrollTop 
+      // 滚动一定距离后，显示回到顶部标识；否则复原
+      if ( articleScrollTop > 200 ) {
+        $('.goToTopIcon').removeClass('icon-message')
+        $('.goToTopIcon').addClass('icon-up')
+        $('.goToTopInfo').text('返回顶部')
+        $('.goToTopA').attr('href','#')   // 去掉相对路径
+        $('.goToTopA').on('click', function () {
+          // 平滑的滚回到顶部
+          scrollArticle.scrollTo({top:0,behavior:'smooth'})
+        })
+        $('.article-end').css('display','block') // 到底通知显示
+      } else {
+        $('.goToTopIcon').removeClass('icon-up')
+        $('.goToTopIcon').addClass('icon-message')
+        $('.goToTopInfo').text('信息')
+        $('.goToTopA').attr('href','../03/message.html')  // reload current page
+        $('.article-end').css('display','none')
+      }
+    } // end of myScrollToTopFn()
+
+    $(function(){
+      
+    }) // end of $(function(){})
+  </script>
+</body>
+</html>

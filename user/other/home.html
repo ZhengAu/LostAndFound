@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>首页</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+  <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+</head>
+<body>
+  <div class="page-group">
+    <div class="page page-current" id="home">
+		  <header class="bar bar-nav">
+		    <div class="buttons-row">
+			    <a href="#searchLose" class="tab-link button active">寻找失物</a>
+			    <a href="#searchLoser" class="tab-link button">寻找失主</a>
+			  </div>
+		  </header>
+		  <!-- 搜索栏 -->
+			<div class="bar bar-header-secondary">
+			  <div class="searchbar">
+			    <a class="searchbar-cancel">取消</a>
+			    <div class="search-input">
+			      <label class="icon icon-search" for="search"></label>
+			      <input type="search" id='search' placeholder='输入关键字...'/>
+			    </div>
+			  </div>
+			</div>
+		  <nav class="bar bar-tab">
+		    <a class="tab-item active" href="home.html">
+		      <span class="icon icon-home"></span>
+		      <span class="tab-label">首页</span>
+		    </a>
+		    <a class="tab-item" href="issue.html">
+		      <span class="icon icon-edit"></span>
+		      <span class="tab-label">发布</span>
+		    </a>
+		    <a class="tab-item" href="message.html">
+		      <span class="icon icon-message"></span>
+		      <span class="tab-label">信息</span>
+		    </a>
+		    <a class="tab-item" href="me.html">
+		      <span class="icon icon-me"></span>
+		      <span class="tab-label">我</span>
+		    </a>
+		  </nav>
+			<!-- 这里是页面内容区 -->
+			<div class="content">
+				<div class="content-block">
+			    <div class="tabs">
+			      <div id="searchLose" class="tab active">
+			        <div class="content-block">
+			          <p>This is tab 1 content</p>
+				        <p>This is home page.--寻找失物</p>
+			        </div>
+			      </div>
+			      <div id="searchLoser" class="tab">
+			        <div class="content-block">
+			          <p>This is tab 2 content</p>
+				        <p>This is home page.--寻找失主</p>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+    </div><!-- end of .page .page-current -->
+  </div><!-- end of .page-group -->
+
+  <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+  <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+  <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+	<script type="text/javascript">
+		$.init()
+	</script>
+</body>
+</html>

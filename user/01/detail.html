@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>首页</title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../../bootstrap-4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+  <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <style type="text/css">
+    .label{
+      width: 130px;
+    }    
+    .list-block{
+      padding: 5px 0px;
+    }
+    ul{
+      padding: 2px 0px;
+    }
+    ul li{
+      padding-top: 10px;
+    }
+    ul::before,ul::after{
+      border: 1px solid #fff;
+    }
+    .issueBtn:hover{
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="bar bar-nav header">
+      <a class="button button-link button-nav pull-left back" href="#" onclick="history.go(-1)">
+        <span class="icon icon-left"></span>
+        返回
+      </a>
+      <h1 class='title'>详情</h1>
+    </header>
+    <!-- 中间，记录显示 -->
+    <div class="mainContent">
+      <form class="list-block" style="margin-top: 20px;">
+        <ul>
+          <!-- Text inputs -->
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="label">标题</div>
+                <div class="item-input">
+                  <input type="text" value="钥匙" readonly>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="label">发布者</div>
+                <div class="item-input">
+                  <input type="text" readonly>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="label">失物类别</div>
+                <div class="item-input">
+                  <input type="text" readonly>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="label">发布类型</div>
+                <div class="item-input">
+                  <input type="text" readonly>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="label">失物细节</div>
+                <div class="item-input">
+                  <textarea readonly>12312323</textarea>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 用户若上传了自己的照片，就显示自己的照片；否则不显示 -->
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="label">照片</div>
+                <div class="item-input">
+                  <img src="../../images/search.jpg" style="width: 360px;height: 210px;">
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 用户未登录，联系方式显示178********；登陆后，显示完全的 -->
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="label">联系方式</div>
+                <div class="item-input">
+                  <input type="text" readonly>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- on：检查登陆情况。若未登录，显示提醒框。确定跳转登陆 -->
+          <li>
+            <div class="item-content">
+              <div class="item-inner" style="border-bottom: 0.5px solid #E7E7E7;margin-bottom: 5px;">
+                <div class="item-title label">捡到失物？</div>
+                <div class="item-input">
+                  <label class="label-switch">
+                    <input type="checkbox">
+                    <div class="checkbox"></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div> <!-- end of container -->
+
+  <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+  <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../bootstrap-4.2.1/js/bootstrap.min.js" charset="utf-8"></script>
+</body>
+</html>
