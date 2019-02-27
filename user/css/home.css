@@ -42,7 +42,7 @@ html,body{
   -webkit-overflow-scrolling: touch;
   /*纵向超出部分将会隐藏，即滚动条部分被挤出可视区域*/
 }
-  /*设置滚动条，谷歌内核webkit*/
+/*设置滚动条，谷歌内核webkit*/
 .container ::-webkit-scrollbar {
     display: none;
 }
@@ -58,8 +58,6 @@ a:link{
   width: 571px;
   margin: auto;
 }
-
-
 /* ================== */
 .searchbar{
 	border: 0px solid #0f0;
