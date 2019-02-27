@@ -125,12 +125,33 @@
           <li>
             <div class="item-content">
               <div class="item-inner" style="border-bottom: 0.5px solid #E7E7E7;margin-bottom: 5px;">
-                <div class="item-title label">捡到失物？</div>
+                <div class="label">捡到失物</div>
                 <div class="item-input">
-                  <label class="label-switch">
-                    <input type="checkbox">
-                    <div class="checkbox"></div>
-                  </label>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="pickUpTheLose" id="forSurePickUpTheLose" value="0" checked>
+                    <label class="form-check-label" for="forSurePickUpTheLose">是</label>
+                  </div>
+                  <div class="form-check form-check-inline" style="padding: 0 10px 0 3px;">
+                    <input class="form-check-input" type="radio" name="pickUpTheLose" id="forDonotPickUpTheLose" value="1">
+                    <label class="form-check-label" for="forDonotPickUpTheLose">否</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner" style="border-bottom: 0.5px solid #E7E7E7;margin-bottom: 5px;">
+                <div class="label">我是失主</div>
+                <div class="item-input">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="IamTheLoser" id="forIamTheLoser" value="0" checked>
+                    <label class="form-check-label" for="forIamTheLoser">是</label>
+                  </div>
+                  <div class="form-check form-check-inline" style="padding: 0 10px 0 3px;">
+                    <input class="form-check-input" type="radio" name="IamTheLoser" id="forIamnotTheLoser" value="1">
+                    <label class="form-check-label" for="forIamnotTheLoser">否</label>
+                  </div>
                 </div>
               </div>
             </div>
