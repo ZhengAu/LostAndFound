@@ -35,6 +35,16 @@
         -ms-overflow-style: none; /*IE 10+*/
         overflow: -moz-scrollbars-none; /*Firefox*/
     }
+    .deleteMyArticleBtn{
+      border:0px solid red;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      padding: 0px 8px;
+      background-color: #fff;
+      color:#000;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
@@ -52,7 +62,8 @@
         <div class="myIssueDiv">
           <div class="card demo-card-header-pic">
             <div class="card-header color-white no-border no-padding">
-              <a href="myIssueDetail.html">
+              <a href="#" class="deleteMyArticleBtn" onclick="console.log('delete...')" style="">X</a>
+              <a href="myIssueDetail.html" style="border:0px solid #0f0;">
 	              <img class='card-cover' src="../../images/search.jpg" style="width: 538px;height: 250px;">
               </a>
             </div>
@@ -71,6 +82,7 @@
           </div>
           <div class="card demo-card-header-pic">
             <div class="card-header color-white no-border no-padding">
+              <a href="#" class="deleteMyArticleBtn" onclick="console.log('delete...')" style="">X</a>
               <a href="myIssueDetail.html">
                 <img class='card-cover' src="../../images/search.jpg" style="width: 538px;height: 250px;">
               </a>
@@ -90,6 +102,7 @@
           </div>
           <div class="card demo-card-header-pic">
             <div class="card-header color-white no-border no-padding">
+              <a href="#" class="deleteMyArticleBtn" onclick="console.log('delete...')" style="">X</a>
               <a href="myIssueDetail.html">
                 <img class='card-cover' src="../../images/search.jpg" style="width: 538px;height: 250px;">
               </a>
