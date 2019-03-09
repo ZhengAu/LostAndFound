@@ -46,10 +46,11 @@
     <div class="mainContent" id="mainContent" onscroll="myScrollToTopFn()">
       <div class="content-wrapping">
         <div class="buttons-tab">
-          <a href="#" class="tab-link button takeInfoBtn active">领取信息</a>
+          <a href="#" class="tab-link button takeInfoBtn active">预约领取</a>
+          <a href="#" class="tab-link button takeBackInfoBtn">预约取回</a>
           <a href="#" class="tab-link button systemInfoBtn">系统信息</a>
         </div>
-        <!-- 领取信息 -->
+        <!-- 预约领取 -->
         <div class="takeInfoDiv">
           <div class="card demo-card-header-pic">
             <div class="card-header color-white no-border no-padding">
@@ -100,6 +101,57 @@
             </div>
           </div>
         </div><!-- end of .takeInfoDiv -->
+        <!-- 预约取回 -->
+        <div class="takeBackInfoDiv" style="display: none;">
+          <div class="card demo-card-header-pic">
+            <div class="card-header color-white no-border no-padding">
+              <a href="taken.html" style="color: #000;">
+                <img class='card-cover' src="../../images/2.jpg" style="width: 538px;height: 250px;">
+              </a>
+            </div>
+            <div class="card-content">
+              <div class="card-content-inner">
+                <a href="taken.html" style="color: #000;">
+                  <strong class="">标题此处是内容此...</strong>
+                </a>
+                <span class="color-gray" style="float: right;">发布于 2015/01/15</span>
+                <p>此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...</p>
+              </div>
+            </div>
+          </div>
+          <div class="card demo-card-header-pic">
+            <div class="card-header color-white no-border no-padding">
+              <a href="taken.html" style="color: #000;">
+                <img class='card-cover' src="../../images/2.jpg" style="width: 538px;height: 250px;">
+              </a>
+            </div>
+            <div class="card-content">
+              <div class="card-content-inner">
+                <a href="taken.html" style="color: #000;">
+                  <strong class="">标题此处是内容此...</strong>
+                </a>
+                <span class="color-gray" style="float: right;">发布于 2015/01/15</span>
+                <p>此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...</p>
+              </div>
+            </div>
+          </div>
+          <div class="card demo-card-header-pic">
+            <div class="card-header color-white no-border no-padding">
+              <a href="taken.html" style="color: #000;">
+                <img class='card-cover' src="../../images/2.jpg" style="width: 538px;height: 250px;">
+              </a>
+            </div>
+            <div class="card-content">
+              <div class="card-content-inner">
+                <a href="taken.html" style="color: #000;">
+                  <strong class="">标题此处是内容此...</strong>
+                </a>
+                <span class="color-gray" style="float: right;">发布于 2015/01/15</span>
+                <p>此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...此处是内容...</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .takeBackInfoDiv -->
         <!-- 系统信息 -->
         <div class="systemInfoDiv" style="display: none;">
           <div class="card">
@@ -251,10 +303,21 @@
       }
     } // end of myScrollToTopFn()
     $(function(){
-      // 点击卡片（领取信息），显示内容
+      // 点击卡片（预约领取），显示内容
       $('.takeInfoBtn').on('click', function(){
         $('.takeInfoDiv').show()
         $('.takeInfoBtn').addClass('active')
+        $('.takeBackInfoDiv').hide()
+        $('.takeBackInfoBtn').removeClass('active')
+        $('.systemInfoDiv').hide()
+        $('.systemInfoBtn').removeClass('active')
+      })
+      // 点击卡片（预约取回），显示内容
+      $('.takeBackInfoBtn').on('click', function(){
+        $('.takeBackInfoDiv').show()
+        $('.takeBackInfoBtn').addClass('active')
+        $('.takeInfoDiv').hide()
+        $('.takeInfoBtn').removeClass('active')
         $('.systemInfoDiv').hide()
         $('.systemInfoBtn').removeClass('active')
       })
@@ -264,6 +327,8 @@
         $('.systemInfoBtn').addClass('active')
         $('.takeInfoDiv').hide()
         $('.takeInfoBtn').removeClass('active')
+        $('.takeBackInfoDiv').hide()
+        $('.takeBackInfoBtn').removeClass('active')
       })
     }) // end of $(function(){})
   </script>

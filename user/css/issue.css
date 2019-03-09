@@ -1,0 +1,68 @@
+.mainContent{
+  height: 100%;
+  padding: 3px;
+  border: 0px solid #0f0;
+  /*设置滚动条*/
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /*解决ios上滑动不流畅*/
+  -webkit-overflow-scrolling: touch;
+  /*纵向超出部分将会隐藏，即滚动条部分被挤出可视区域*/
+}
+  /*设置滚动条，谷歌内核webkit*/
+.container ::-webkit-scrollbar {
+    display: none;
+}
+/*设置滚动条，IE或者Firefox*/
+.container {
+    -ms-overflow-style: none; /*IE 10+*/
+    overflow: -moz-scrollbars-none; /*Firefox*/
+}
+.label{
+  width: 140px;
+}    
+.list-block{
+  padding: 5px 0px;
+}
+ul{
+  padding: 2px 0px;
+}
+ul li{
+  padding-top: 10px;
+}
+ul::before,ul::after{
+  border: 1px solid #fff;
+}
+.issueBtn:hover{
+  background-color: #fff;
+}
+.mainContent{
+  height: 100%;
+  padding: 3px;
+  border: 0px solid #0f0;
+  /*设置滚动条*/
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /*解决ios上滑动不流畅*/
+  -webkit-overflow-scrolling: touch;
+  /*纵向超出部分将会隐藏，即滚动条部分被挤出可视区域*/
+}
+  /*设置滚动条，谷歌内核webkit*/
+.container ::-webkit-scrollbar {
+    display: none;
+}
+/*设置滚动条，IE或者Firefox*/
+.container {
+    -ms-overflow-style: none; /*IE 10+*/
+    overflow: -moz-scrollbars-none; /*Firefox*/
+}
+.deleteMyArticleBtn{
+  border:0px solid red;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 0px 8px;
+  background-color: #fff;
+  color:#000;
+  border-radius: 8px;
+}
