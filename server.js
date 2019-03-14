@@ -27,7 +27,7 @@ http.createServer(function(req,res){
 		if (err) {
 			res.writeHeader(200, {'Content-Type' : 'text/html;charset=utf-8'});
 			res.end("<h2 style='color:#f00;'>File not found!  404 </h2>");
-		}else{
+		} else {
 			res.setHeader('Content-Type', mime.getType(filename));
 			res.end(data);
 		}
